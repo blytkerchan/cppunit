@@ -1,0 +1,279 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MSDNIntegrator.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\MSDNIntegrator.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MSDNINTEGRATOR_DIALOG DIALOGEX 0, 0, 306, 253
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "MSDN Collection Integration Utility"
+FONT 8, "Tahoma"
+BEGIN
+    LTEXT           "Select *.chm File:",IDC_STATIC,7,6,229,8
+    EDITTEXT        IDC_EDIT_CHM,7,17,229,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BTN_CHM,239,17,14,14
+    LTEXT           "Select *.chi File:",IDC_STATIC,7,35,229,8
+    EDITTEXT        IDC_EDIT_CHI,7,46,229,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BTN_CHI,239,46,14,14
+    LTEXT           "Title String:",IDC_STATIC,7,64,38,8
+    EDITTEXT        IDC_EDIT_TITLE,7,75,229,14,ES_AUTOHSCROLL
+    LTEXT           "Version:",IDC_STATIC,239,64,27,8
+    EDITTEXT        IDC_EDIT_VER,239,75,14,14,ES_AUTOHSCROLL
+    LTEXT           "Unique Identifier:",IDC_STATIC,7,95,229,8
+    EDITTEXT        IDC_EDIT_ID,7,106,229,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Gen. GUID",IDC_BTN_ID,239,106,60,14
+    RTEXT           "MSDN Collection:",IDC_STATIC,40,141,73,8
+    LTEXT           "( not found )",IDC_TXT_COL,118,141,146,8
+    RTEXT           "Language ID:",IDC_STATIC,40,151,73,8
+    LTEXT           "( not availiable )",IDC_TXT_ID,118,151,146,8
+    RTEXT           "Collection Number:",IDC_STATIC,40,161,73,8
+    LTEXT           "( not availiable )",IDC_TXT_NO,118,161,146,8
+    RTEXT           "MSDN Collection path:",IDC_STATIC,40,176,73,8
+    EDITTEXT        IDC_EDIT_COL,118,174,146,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "hhcolreg.dat path:",IDC_STATIC,40,190,73,8
+    EDITTEXT        IDC_EDIT_DAT,118,188,146,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,
+                    216,292,10
+    PUSHBUTTON      "Integrate with MSDN",IDC_BTN_ADD,131,232,105,14
+    PUSHBUTTON      "Done",IDCANCEL,239,232,60,14
+    PUSHBUTTON      "Help",IDC_BTN_HELP,7,232,60,14
+    PUSHBUTTON      "Remove",IDC_BTN_REMOVE,69,232,60,14
+    GROUPBOX        "Static",IDC_STATIC,7,127,292,82
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 288, 102
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MSDN Integration Utility"
+FONT 8, "Tahoma", 0, 0, 0x1
+BEGIN
+    LTEXT           "MSDN Integration Utility",IDC_TXT_TITLE,130,7,151,8,
+                    SS_NOPREFIX
+    LTEXT           "http://www.codejock.com/",IDC_STATIC,7,82,103,8
+    DEFPUSHBUTTON   "OK",IDOK,231,81,50,14,WS_GROUP
+    LTEXT           "This program is 100% free, and can be freely distributed and used unconditionally so long as this dialog does not change.",
+                    IDC_STATIC,130,21,151,26
+    CONTROL         129,IDC_STATIC,"Static",SS_BITMAP,7,7,115,46,
+                    WS_EX_DLGMODALFRAME
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,74,274,1
+    LTEXT           "© 2001 Codejock.com Software, All Rights Reserved.",
+                    IDC_TXT_COPYRIGHT,7,57,274,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MSDNIntegrator MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MSDNIntegrator\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MSDNIntegrator.EXE\0"
+            VALUE "ProductName", "MSDNIntegrator Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MSDNINTEGRATOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 299
+        VERTGUIDE, 12
+        VERTGUIDE, 294
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 246
+        HORZGUIDE, 131
+        HORZGUIDE, 209
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 281
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOGO                BITMAP  FIXED IMPURE    "res\\logo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About MSDNIntegrator..."
+    IDS_MSDN_KEY            "Software\\Microsoft\\HTML Help Collections\\Developer Collections"
+    IDS_OLD_DAT             "%s\\Help\\hhcolreg.dat"
+    IDS_NEW_DAT             "%s\\Documents and Settings\\All Users\\Application Data\\Microsoft\\HTML Help\\hhcolreg.dat"
+    IDS_NEWER_DAT           "%s\\Microsoft\\HTML Help\\hhcolreg.dat"
+    IDS_REGISTRY            "<DocCompilation>\n\t<DocCompId value=""%s""/>\n\t<DocCompLanguage value=%s/>\n\t<LocationHistory>\n\t\t<ColNum value=%s/>\n\t\t<TitleLocation value=""%s""/>\n\t\t<IndexLocation value=""%s""/>\n\t\t<LocationRef value=""""/>\n\t\t<Version value=%s/>\n\t\t<LastPromptedVersion value=0/>\n\t\t<TitleSampleLocation value=""""/>\n\t\t<TitleQueryLocation value=""""/>\n\t\t<SupportsMerge value=0/>\n\t</LocationHistory>\n</DocCompilation>\n"
+    IDS_COLLECTION          "\t\t<Folder>\n\t\t\t<TitleString value=""%s""/>\n\t\t\t<FolderOrder value=2/>\n\t\t\t<Folder>\n\t\t\t\t<TitleString value=""=%s""/>\n\t\t\t\t<FolderOrder value=1/>\n\t\t\t\t<LangId value=%s/>\n\t\t\t</Folder>\n\t\t</Folder>\n"
+    IDS_GUID                "{%08lX-%04X-%04x-%02X%02X-%02X%02X%02X%02X%02X%02X}"
+    IDS_CHI_FILTER          "Chi Files (*.chi)|*.chi|All Files (*.*)|*.*||"
+    IDS_CHM_FILTER          "Chm Files (*.chm)|*.chm|All Files (*.*)|*.*||"
+    IDS_ERR_TITLE           "Error During Integration"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_COLNOTFOUND     "Error finding MSDN collection.  MSDN integration can only be performed on a system that has the MSDN library installed...aborting."
+    IDS_ERR_REGNOTFOUND     "The MSDN Library Installation was not found in your systems registry."
+    IDS_ERR_DATNOTFOUND     "Error finding MSDN hhcolreg.dat, MSDN integration can only be performed on a system that has the MSDN library installed, aborting."
+    IDS_ERR_CREATE_GUID     "Unable to create new GUID."
+    IDS_ERR_INIT_CHM        "Unable to update MSDN collection, .CHM path was not specified."
+    IDS_ERR_INIT_CHI        "Unable to update MSDN collection, .CHI path was not specified."
+    IDS_ERR_INIT_TITLE      "Unable to update MSDN collection, title string was not specified."
+    IDS_ERR_INIT_ID         "Unable to update MSDN collection, unique ID was not specified."
+    IDS_ERR_INIT_DAT        "Unable to update MSDN collection, hhcolreg.dat path was not specified."
+    IDS_ERR_INIT_COL        "Unable to update MSDN collection, MSDN collection path was not specified."
+    IDS_ERR_OPENFILE        "File could not be opened, cause:%d"
+    IDS_INTEGRATION_COMPLETE "Integration Complete!"
+    IDS_REMOVAL_COMPLETE    "Integration Removal Complete!"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\MSDNIntegrator.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
