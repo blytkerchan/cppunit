@@ -1,3 +1,8 @@
+2001-10-19  Steve ROBBINS  <stever@bic.mni.mcgill.ca>
+
+	* examples/cppunittest/TestSetUpTest.h (class SetUp): Add
+ 	namespace qualifier to CppUnit::TestSetup() constructor call.
+
 2001-10-18  Steve M. Robbins  <steve@nyongwa.montreal.qc.ca>
 
 	* include/cppunit/Makefile.am (dist-hook): Restore hook to
