@@ -3,6 +3,8 @@
   * forked, development toward 1.10.0 are now taking place in
   branch BRANCH_1_9_12 until xml input stuff are integrated.
 
+  * configure.in: bumped version number to 1.9.12.
+
 2004-02-18 Baptiste Lepilleur <gaiacrtn@free.fr>
 
   * configure.in:
