@@ -1,3 +1,16 @@
+2001-10-18  Steve M. Robbins  <steve@nyongwa.montreal.qc.ca>
+
+	* include/cppunit/Makefile.am (dist-hook): Restore hook to
+	remove config-auto.h from distribution.
+
+	* doc/Makefile.am: Move the definition of htmldir inside if DOC
+	conditional.  Add "else" branch to conditional with dummy targets
+	for install-data-hook and uninstall-local.  Move all-local outside
+	the conditional, and move "dox" target into both branches of the
+	conditional.
+
+	* configure.in: Bump version to 1.6.2.
+
 2001-09-30  Steve M. Robbins  <steve@nyongwa.montreal.qc.ca>
 
 	* Release 1.6.1.

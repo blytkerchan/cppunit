@@ -1,3 +1,9 @@
+	New in CppUnit 1.6.2
+	--------------------
+
+* Improved install procedure for systems that lack doxygen.
+
+
 	New in CppUnit 1.6.1
 	--------------------
 

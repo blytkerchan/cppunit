@@ -1,5 +1,3 @@
-htmldir = $(pkgdatadir)/html
-
 EXTRA_DIST = $(doxygen_input) $(static_pages)
 
 doxygen_input = other_documentation.dox header.html footer.html
@@ -17,6 +15,7 @@ static_pages = cookbook.html FAQ
 
 if DOC
 
+htmldir = $(pkgdatadir)/html
 html_DATA = $(static_pages) html/index.html
 
 install-data-hook:
@@ -27,9 +26,18 @@ install-data-hook:
 uninstall-local:
 	rm -rf $(DESTDIR)$(htmldir)
 
-all-local: dox #pdf
+dox: html/index.html
+
+else
+
+install-data-hook:
+uninstall-local:
+dox:
 
 endif
+
+
+all-local: dox
 
 
 # Workaround for broken Doxygen.  Version 1.2.9.1 doesn't create
@@ -38,8 +46,6 @@ man_extension_dir = man/man3/extensions
 $(man_extension_dir):
 	mkdir -p $@
 
-
-dox: html/index.html
 
 html/index.html: Doxyfile $(doxygen_input) $(man_extension_dir)
 	@DOXYGEN@
