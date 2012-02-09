@@ -1,0 +1,10 @@
+This is a fork of the original CPPUnit library, cloned from the original svn
+repository (which was apparently forked from a CVS repository).
+
+I will accept patches to this version of CPPUnit and, if sufficient new 
+features or bugfixes warrant it, release a new version as CPPUnit-forked.
+
+I do not intend to go on any large coding binges: CPPUnit has been stable 
+and usable for many years, and I have no intention of changing that - I just
+intend to allow improving on it.
+
