@@ -69,6 +69,20 @@ Asserter::makeNotEqualMessage( const std::string &expectedValue,
   return message;
 }
 
+Message
+Asserter::makePredicateFailMessage( const std::string &expectedValue,
+                                    const std::string &actualValue,
+                                    const AdditionalMessage &additionalMessage,
+                                    const std::string &shortDescription)
+{
+    Message message( shortDescription,
+                     makeExpected( expectedValue ),
+                     makeActual( actualValue ) );
+    message.addDetail( additionalMessage );
+
+    return message;
+}
+
 
 void 
 Asserter::failNotEqual( std::string expected, 
@@ -95,6 +109,19 @@ Asserter::failNotEqualIf( bool shouldFail,
 {
   if ( shouldFail )
     failNotEqual( expected, actual, sourceLine, additionalMessage, shortDescription );
+}
+
+void Asserter::failPredicate( std::string expected, 
+                              std::string actual, 
+                              const SourceLine &sourceLine,
+                              const AdditionalMessage &additionalMessage,
+                              std::string shortDescription )
+{
+    fail( makePredicateFailMessage( expected,
+                                    actual,
+                                    additionalMessage,
+                                    shortDescription ), 
+          sourceLine );
 }
 
 

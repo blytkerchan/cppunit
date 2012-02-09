@@ -103,6 +103,10 @@ struct Asserter
                                                   const AdditionalMessage &additionalMessage = AdditionalMessage(),
                                                   const std::string &shortDescription = "equality assertion failed");
 
+  static Message CPPUNIT_API makePredicateFailMessage( const std::string &expectedValue,
+                                                       const std::string &actualValue,
+                                                       const AdditionalMessage &additionalMessage = AdditionalMessage(),
+                                                       const std::string &shortDescription = "predicate failed");
   /*! \brief Throws an Exception with the specified message and location.
    * \param expected Text describing the expected value.
    * \param actual Text describing the actual value.
@@ -134,6 +138,20 @@ struct Asserter
                                           const AdditionalMessage &additionalMessage = AdditionalMessage(),
                                           std::string shortDescription = "equality assertion failed" );
 
+
+  /*! \brief Throws an Exception with the specified message and location.
+   * \param expected Text describing the expected value.
+   * \param actual Text describing the actual value.
+   * \param sourceLine Location of the assertion.
+   * \param additionalMessage Additional message. Usually used to report
+   *                          where the "failed predicate" is located.
+   * \param shortDescription Short description for the failure message.
+   */
+  static void CPPUNIT_API failPredicate( std::string expected, 
+                                         std::string actual, 
+                                         const SourceLine &sourceLine,
+                                         const AdditionalMessage &additionalMessage = AdditionalMessage(),
+                                         std::string shortDescription = "predicate failed" );
 };
 
 

@@ -105,6 +105,25 @@ void assertEquals( const T& expected,
   }
 }
 
+/*! \brief (Implementation) Applies a given predicate to two values of the same type and asserts the predicate returns true.
+ * Use CPPUNIT_ASSERT_PREDICATE instead of this function.
+ * \sa assertion_traits, Asserter::failPredicate().
+ */
+template < class T, class P >
+void assertPredicate(const T& expected,
+                     const T& actual,
+                     const P& predicate,
+                     SourceLine sourceLine,
+                     const std::string &message)
+{
+    if (!predicate(actual, expected))
+    {
+        Asserter::failPredicate( assertion_traits<T>::toString(expected),
+                                 assertion_traits<T>::toString(actual),
+                                 sourceLine,
+                                 message );
+    }
+}
 
 /*! \brief (Implementation) Asserts that two double are equals given a tolerance.
  * Use CPPUNIT_ASSERT_DOUBLES_EQUAL instead of this function.
@@ -247,7 +266,12 @@ void CPPUNIT_API assertDoubleEquals( double expected,
                                     CPPUNIT_SOURCELINE(),  \
                                     (message) ) )
 
-
+#define CPPUNIT_ASSERT_PREDICATE(message, expected, actual, predicate)  \
+    ( CPPUNIT_NS::assertPredicate( (expected),                          \
+                                   (actual),                            \
+                                   (predicate),                         \
+                                   CPPUNIT_SOURCELINE(),                \
+                                   (message) ) )
 /** Asserts that the given expression throws an exception of the specified type. 
  * \ingroup Assertions
  * Example of usage:
