@@ -6,52 +6,52 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClockerPlugIn", "ClockerPlu
 		{6407D1BA-0C4D-4903-8BE8-728547FE1BBE} = {6407D1BA-0C4D-4903-8BE8-728547FE1BBE}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppUnitTestApp", "msvc6\CppUnitTestApp\CppUnitTestApp.vcproj", "{9D36E4E1-3CC7-4218-B334-695A3DBFAD79}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppUnitTestApp", "CppUnitTest\CppUnitTestApp.vcproj", "{9D36E4E1-3CC7-4218-B334-695A3DBFAD79}"
 	ProjectSection(ProjectDependencies) = postProject
 		{914D0749-B9BA-40CD-9E84-41A68786848A} = {914D0749-B9BA-40CD-9E84-41A68786848A}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppUnitTestMain", "cppunittest\CppUnitTestMain.vcproj", "{9AE80CDE-809B-4D04-8E6E-8061843D748B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppUnitTestMain", "CppUnitTest\CppUnitTestMain.vcproj", "{9AE80CDE-809B-4D04-8E6E-8061843D748B}"
 	ProjectSection(ProjectDependencies) = postProject
 		{9E6FC828-023C-4776-9EF1-6FEB45B88BF4} = {9E6FC828-023C-4776-9EF1-6FEB45B88BF4}
 		{6407D1BA-0C4D-4903-8BE8-728547FE1BBE} = {6407D1BA-0C4D-4903-8BE8-728547FE1BBE}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppUnitTestPlugIn", "cppunittest\CppUnitTestPlugIn.vcproj", "{4B7E48D0-5FB6-4587-8631-F157F2388DEA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppUnitTestPlugIn", "CppUnitTest\CppUnitTestPlugIn.vcproj", "{4B7E48D0-5FB6-4587-8631-F157F2388DEA}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6407D1BA-0C4D-4903-8BE8-728547FE1BBE} = {6407D1BA-0C4D-4903-8BE8-728547FE1BBE}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DllPlugInTester", "..\src\DllPlugInTester\DllPlugInTester.vcproj", "{831B69EA-539C-4DCC-A9E0-25D717636A16}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DllPlugInTester", "DllPlugInTester\DllPlugInTester.vcproj", "{831B69EA-539C-4DCC-A9E0-25D717636A16}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6407D1BA-0C4D-4903-8BE8-728547FE1BBE} = {6407D1BA-0C4D-4903-8BE8-728547FE1BBE}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DllPlugInTesterTest", "..\src\DllPlugInTester\DllPlugInTesterTest.vcproj", "{E05AAA6F-C45D-45E6-837A-01687A0C0903}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DllPlugInTesterTest", "DllPlugInTester\DllPlugInTesterTest.vcproj", "{E05AAA6F-C45D-45E6-837A-01687A0C0903}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DumperPlugIn", "DumperPlugIn\DumperPlugIn.vcproj", "{D2A913B4-0257-453F-8519-75E1DF33F76B}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6407D1BA-0C4D-4903-8BE8-728547FE1BBE} = {6407D1BA-0C4D-4903-8BE8-728547FE1BBE}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HostApp", "msvc6\HostApp\HostApp.vcproj", "{0A850126-8FDC-46A2-B977-16D296BA9363}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HostApp", "HostApp\HostApp.vcproj", "{0A850126-8FDC-46A2-B977-16D296BA9363}"
 	ProjectSection(ProjectDependencies) = postProject
 		{914D0749-B9BA-40CD-9E84-41A68786848A} = {914D0749-B9BA-40CD-9E84-41A68786848A}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestPlugInRunner", "..\src\msvc6\testpluginrunner\TestPlugInRunner.vcproj", "{8982E220-3042-4D5F-AD17-02DB61FC90B7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestPlugInRunner", "TestPlugInRunner\TestPlugInRunner.vcproj", "{8982E220-3042-4D5F-AD17-02DB61FC90B7}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6407D1BA-0C4D-4903-8BE8-728547FE1BBE} = {6407D1BA-0C4D-4903-8BE8-728547FE1BBE}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestRunner", "..\src\msvc6\testrunner\TestRunner.vcproj", "{914D0749-B9BA-40CD-9E84-41A68786848A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestRunner", "TestRunner\TestRunner.vcproj", "{914D0749-B9BA-40CD-9E84-41A68786848A}"
 	ProjectSection(ProjectDependencies) = postProject
 		{9E6FC828-023C-4776-9EF1-6FEB45B88BF4} = {9E6FC828-023C-4776-9EF1-6FEB45B88BF4}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cppunit", "..\src\cppunit\cppunit.vcproj", "{9E6FC828-023C-4776-9EF1-6FEB45B88BF4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cppunit", "cppunit\cppunit.vcproj", "{9E6FC828-023C-4776-9EF1-6FEB45B88BF4}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cppunit_dll", "..\src\cppunit\cppunit_dll.vcproj", "{6407D1BA-0C4D-4903-8BE8-728547FE1BBE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cppunit_dll", "cppunit\cppunit_dll.vcproj", "{6407D1BA-0C4D-4903-8BE8-728547FE1BBE}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hierarchy", "hierarchy\hierarchy.vcproj", "{41BD2F8C-3810-4C31-B7A5-6B33FFF3ED01}"
 	ProjectSection(ProjectDependencies) = postProject
