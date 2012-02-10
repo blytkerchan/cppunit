@@ -4,7 +4,6 @@
 * create files to distribute and copy them to sourceforge
 
 	Bump up release version in:
-	 - include/cppunit/Portability.h
 	 - configure.in
 	 - doc/makedox.bat
 	 - NEWS
