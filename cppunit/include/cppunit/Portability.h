@@ -5,6 +5,8 @@
 # define WIN32 1
 #endif
 
+#include "version.h"
+
 /* include platform specific config */
 #if defined(__BORLANDC__)
 #  include <cppunit/config/config-bcb5.h>
@@ -18,11 +20,6 @@
 #    include <cppunit/config-auto.h>
 #endif
 
-// Version number of package
-#ifndef CPPUNIT_VERSION 
-#define CPPUNIT_VERSION  "1.12.0"
-#endif
- 
 #include <cppunit/config/CppUnitApi.h>    // define CPPUNIT_API & CPPUNIT_NEED_DLL_DECL
 #include <cppunit/config/SelectDllLoader.h>
 

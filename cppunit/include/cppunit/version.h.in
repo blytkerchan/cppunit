@@ -1,0 +1,16 @@
+#ifndef CPPUNIT_VERSION_H
+#define CPPUNIT_VERSION_H
+
+/* Define to the version of this package. */
+#ifndef CPPUNIT_PACKAGE_VERSION 
+#define CPPUNIT_PACKAGE_VERSION  "@PACKAGE_VERSION@" 
+#endif
+
+/* Version number of CPPUnit */
+#ifndef CPPUNIT_VERSION 
+#define CPPUNIT_VERSION  "@CPPUNIT_VERSION@"
+#endif
+ 
+#endif
+
+

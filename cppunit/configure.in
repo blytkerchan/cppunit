@@ -14,8 +14,8 @@ AC_PREREQ(2.50)
 # set CPPUNIT_BINARY_AGE and CPPUNIT_INTERFACE_AGE to 0.
 #
 CPPUNIT_MAJOR_VERSION=1
-CPPUNIT_MINOR_VERSION=12
-CPPUNIT_MICRO_VERSION=1
+CPPUNIT_MINOR_VERSION=13
+CPPUNIT_MICRO_VERSION=00
 CPPUNIT_INTERFACE_AGE=0
 CPPUNIT_BINARY_AGE=0
 CPPUNIT_VERSION=$CPPUNIT_MAJOR_VERSION.$CPPUNIT_MINOR_VERSION.$CPPUNIT_MICRO_VERSION
@@ -132,6 +132,7 @@ AC_OUTPUT([
   src/DllPlugInTester/Makefile
   src/cppunit/Makefile
   include/Makefile
+  include/cppunit/version.h
   include/cppunit/Makefile
   include/cppunit/config/Makefile
   include/cppunit/extensions/Makefile
