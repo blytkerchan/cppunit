@@ -4,6 +4,10 @@
 #include <cppunit/Portability.h>
 #include <math.h>
 
+#if defined(CPPUNIT_HAVE_IEEEFP_H)
+#include <ieeefp.h>
+#endif
+
 CPPUNIT_NS_BEGIN
 
 /// \brief Tests if a floating-point is a NaN.
