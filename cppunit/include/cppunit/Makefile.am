@@ -5,7 +5,8 @@ DISTCLEANFILES = config-auto.h
 libcppunitincludedir = $(includedir)/cppunit
 libcppunitinclude_HEADERS =  \
 	config-auto.h \
-  AdditionalMessage.h \
+	version.h \
+	AdditionalMessage.h \
 	Asserter.h \
 	BriefTestProgressListener.h \
 	CompilerOutputter.h \
@@ -16,17 +17,18 @@ libcppunitinclude_HEADERS =  \
 	Protector.h \
 	SourceLine.h \
 	SynchronizedObject.h \
-	Test.h \
 	TestAssert.h \
-	TestCase.h \
 	TestCaller.h \
+	TestCase.h \
 	TestComposite.h \
 	TestFailure.h \
 	TestFixture.h \
+	Test.h \
 	TestLeaf.h \
+	TestListener.h \
 	TestPath.h \
-	TestResult.h \
 	TestResultCollector.h \
+	TestResult.h \
 	TestRunner.h \
 	TestSuccessListener.h \
 	TestSuite.h \
@@ -34,7 +36,6 @@ libcppunitinclude_HEADERS =  \
 	TextTestProgressListener.h \
 	TextTestResult.h \
 	TextTestRunner.h \
-	TestListener.h \
 	XmlOutputter.h \
 	XmlOutputterHook.h
 
